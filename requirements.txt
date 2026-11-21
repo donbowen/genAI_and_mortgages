@@ -1,0 +1,6 @@
+# Direct dependencies, at the versions the scripts were run with (Python 3.11.16).
+# requirements.lock.txt pins the full environment.
+pandas==3.0.6
+numpy==2.4.6
+tqdm==4.70.1
+edsl==1.0.8

@@ -1,0 +1,24 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{5}{c}}
+\toprule
+                &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         &\multicolumn{1}{c}{(5)}         \\
+\midrule
+CreditScore (Exp., z)&   -0.689\sym{***}&   -0.632\sym{***}&   -0.689\sym{***}&   -0.689\sym{***}&   -0.632\sym{***}\\
+                &  (0.006)         &  (0.007)         &  (0.006)         &  (0.006)         &  (0.007)         \\
+Black           &    0.352\sym{***}&    0.352\sym{***}&    0.352\sym{***}&    0.352\sym{***}&    0.352\sym{***}\\
+                &  (0.011)         &  (0.011)         &  (0.011)         &  (0.011)         &  (0.011)         \\
+Black $\times$ CreditScore (Exp., z)&                  &   -0.114\sym{***}&                  &                  &   -0.114\sym{***}\\
+                &                  &  (0.011)         &                  &                  &  (0.011)         \\
+Black $\times$ DTI (Actual, z)&                  &                  &    0.091\sym{***}&                  &    0.084\sym{***}\\
+                &                  &                  &  (0.013)         &                  &  (0.013)         \\
+Black $\times$ LTV (Actual, z)&                  &                  &                  &    0.065\sym{***}&    0.056\sym{***}\\
+                &                  &                  &                  &  (0.011)         &  (0.011)         \\
+\midrule
+Obs             &    6,000         &    6,000         &    6,000         &    6,000         &    6,000         \\
+R$^2$           &     0.85         &     0.86         &     0.85         &     0.85         &     0.86         \\
+Adj R$^2$       &     0.82         &     0.83         &     0.82         &     0.82         &     0.83         \\
+Loan FE         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         \\
+\bottomrule
+\end{tabular}
+}

@@ -1,0 +1,25 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{8}{c}}
+\toprule
+Family          &\multicolumn{4}{c}{Anthropic Claude}                                       &\multicolumn{2}{c}{Deep Seek}        &\multicolumn{2}{c}{Gemini Flash Lite}\\\cmidrule(lr){2-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}
+\shortstack{\vphantom{Model Opus}Model\\(\#)}&\shortstack{\vphantom{Model Opus}3 Sonnet\\(1)}         &\shortstack{\vphantom{Model Opus}3 Opus  \\(2)}         &\shortstack{\vphantom{Model Opus}4.8 Opus  \\(3)}         &\shortstack{\vphantom{Model Opus}5 Sonnet\\(4)}         &\shortstack{\vphantom{Model Opus}v3.1  \\(5)}         &\shortstack{\vphantom{Model Opus}v4    \\(6)}         &\shortstack{\vphantom{Model Opus}2.5   \\(7)}         &\shortstack{\vphantom{Model Opus}3.1   \\(8)}         \\
+\midrule
+CreditScore (Exp., z)&   -0.718\sym{***}&   -0.866\sym{***}&   -0.424\sym{***}&   -0.507\sym{***}&   -0.978\sym{***}&   -1.118\sym{***}&   -1.942\sym{***}&   -0.452\sym{***}\\
+                &  (0.004)         &  (0.005)         &  (0.005)         &  (0.005)         &  (0.011)         &  (0.014)         &  (0.009)         &  (0.005)         \\
+Black           &    0.193\sym{***}&    0.238\sym{***}&   -0.121\sym{***}&    0.088\sym{***}&    0.188\sym{***}&    0.203\sym{***}&    0.249\sym{***}&    0.067\sym{***}\\
+                &  (0.008)         &  (0.011)         &  (0.010)         &  (0.009)         &  (0.021)         &  (0.028)         &  (0.018)         &  (0.010)         \\
+\midrule
+Obs             &    5,989         &    5,215         &    5,885         &    5,987         &    6,000         &    6,000         &    6,000         &    6,000         \\
+R$^2$           &     0.90         &     0.91         &     0.75         &     0.85         &     0.76         &     0.71         &     0.91         &     0.77         \\
+Adj R$^2$       &     0.88         &     0.89         &     0.70         &     0.82         &     0.72         &     0.66         &     0.90         &     0.73         \\
+Loan FE         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         \\
+Avg(y)          &     5.52         &     5.64         &     4.80         &     5.52         &     6.02         &     6.98         &     6.59         &     6.09         \\
+Avg(y $|$ White)&     5.42         &     5.54         &     4.86         &     5.47         &     5.93         &     6.88         &     6.47         &     6.05         \\
+Avg(y $|$ Black)&     5.61         &     5.78         &     4.73         &     5.56         &     6.12         &     7.09         &     6.72         &     6.12         \\
+White Answer Rate (\%)&    99.83         &    99.57         &    99.80         &    99.83         &   100.00         &   100.00         &   100.00         &   100.00         \\
+Black Answer Rate (\%)&    99.80         &    74.27         &    96.37         &    99.73         &   100.00         &   100.00         &   100.00         &   100.00         \\
+CSE             &   -16.45         &   -16.80         &    17.48         &   -10.58         &   -11.80         &   -11.11         &    -7.85         &    -9.05         \\
+\bottomrule
+\end{tabular}
+}

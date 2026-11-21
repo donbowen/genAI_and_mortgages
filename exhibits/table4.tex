@@ -1,0 +1,31 @@
+{\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{5}{c}} \toprule
+                &\multicolumn{2}{c}{Approval}         &         &\multicolumn{2}{c}{Interest Rate}    \\\cmidrule(lr){2-3}\cmidrule(lr){5-6}
+                &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         \\
+\midrule
+CreditScore (Exp., z)&    0.033\sym{***}&    0.023\sym{***}&         &   -0.664\sym{***}&   -0.662\sym{***}\\
+                &  (0.001)         &  (0.003)         &         &  (0.003)         &  (0.006)         \\
+Asian           &   -0.001         &   -0.001         &         &   -0.062\sym{***}&   -0.062\sym{***}\\
+                &  (0.003)         &  (0.003)         &         &  (0.009)         &  (0.008)         \\
+Black           &   -0.077\sym{***}&   -0.077\sym{***}&         &    0.301\sym{***}&    0.301\sym{***}\\
+                &  (0.005)         &  (0.005)         &         &  (0.011)         &  (0.011)         \\
+Hispanic        &   -0.012\sym{***}&   -0.012\sym{***}&         &    0.118\sym{***}&    0.117\sym{***}\\
+                &  (0.004)         &  (0.004)         &         &  (0.008)         &  (0.008)         \\
+White           &    0.008\sym{**} &    0.008\sym{**} &         &   -0.051\sym{***}&   -0.051\sym{***}\\
+                &  (0.003)         &  (0.003)         &         &  (0.008)         &  (0.008)         \\
+Asian $\times$ CreditScore (Exp., z)&                  &    0.000         &         &                  &    0.047\sym{***}\\
+                &                  &  (0.004)         &         &                  &  (0.009)         \\
+Black $\times$ CreditScore (Exp., z)&                  &    0.044\sym{***}&         &                  &   -0.084\sym{***}\\
+                &                  &  (0.005)         &         &                  &  (0.011)         \\
+Hispanic $\times$ CreditScore (Exp., z)&                  &    0.009\sym{**} &         &                  &   -0.002         \\
+                &                  &  (0.004)         &         &                  &  (0.009)         \\
+White $\times$ CreditScore (Exp., z)&                  &   -0.004         &         &                  &    0.030\sym{***}\\
+                &                  &  (0.004)         &         &                  &  (0.008)         \\
+\midrule
+Obs             &   15,000         &   15,000         &         &   15,000         &   15,000         \\
+R$^2$           &     0.59         &     0.60         &         &     0.86         &     0.86         \\
+Adj R$^2$       &     0.56         &     0.57         &         &     0.85         &     0.85         \\
+Loan FE         &      Yes         &      Yes         &         &      Yes         &      Yes         \\
+\bottomrule
+\end{tabular}
+}

@@ -1,0 +1,28 @@
+# secrets
+.env
+
+# raw download (01_get_data.py fetches it)
+raw_data/
+
+# large files distributed as GitHub release assets
+input_data/2022_public_lar_csv_filtered.zip
+output_data/experiment_results.csv
+
+# provenance scripts that need the authors' original (non-public) collection files
+extras/
+
+# intermediate and test output from 02_get_experiment_results.py
+output_data/edsl_runs*/
+output_data/experiment_results_n*.csv
+output_data/experiment_results_*standin*.csv
+output_data/experiment_results*_subset.csv
+
+# Stata batch mode writes its own copy of the log next to the do-file; the
+# kept log is exhibits/03_analysis.log
+/03_analysis.log
+
+# misc
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.smcl

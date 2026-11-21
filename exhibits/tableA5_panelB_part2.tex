@@ -1,0 +1,25 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{8}{c}}
+\toprule
+Family          &\multicolumn{4}{c}{Meta Llama}                                             &\multicolumn{4}{c}{OpenAI GPT}                                             \\\cmidrule(lr){2-5}\cmidrule(lr){6-9}
+\shortstack{\vphantom{Model Opus}Model\\(\#)}&\shortstack{\vphantom{Model Opus}3 70b   \\(9)}         &\shortstack{\vphantom{Model Opus}3.1 8b  \\(10)}         &\shortstack{\vphantom{Model Opus}3.3 70b \\(11)}         &\shortstack{\vphantom{Model Opus}4 Scout \\(12)}         &\shortstack{\vphantom{Model Opus}4-Turbo \\(13)}         &\shortstack{\vphantom{Model Opus}4       \\(14)}         &\shortstack{\vphantom{Model Opus}5.4 Nano\\(15)}         &\shortstack{\vphantom{Model Opus}5.4     \\(16)}         \\
+\midrule
+CreditScore (Exp., z)&   -0.430\sym{***}&   -0.376\sym{***}&   -0.523\sym{***}&   -0.799\sym{***}&   -0.689\sym{***}&   -0.842\sym{***}&   -1.083\sym{***}&   -0.566\sym{***}\\
+                &  (0.003)         &  (0.006)         &  (0.006)         &  (0.012)         &  (0.006)         &  (0.007)         &  (0.014)         &  (0.007)         \\
+Black           &    0.237\sym{***}&    0.132\sym{***}&    0.334\sym{***}&    0.263\sym{***}&    0.352\sym{***}&    0.093\sym{***}&    0.357\sym{***}&    0.080\sym{***}\\
+                &  (0.006)         &  (0.011)         &  (0.012)         &  (0.022)         &  (0.011)         &  (0.013)         &  (0.029)         &  (0.014)         \\
+\midrule
+Obs             &    6,000         &    5,841         &    6,000         &    5,139         &    6,000         &    6,000         &    6,000         &    6,000         \\
+R$^2$           &     0.89         &     0.57         &     0.82         &     0.74         &     0.85         &     0.84         &     0.63         &     0.80         \\
+Adj R$^2$       &     0.87         &     0.48         &     0.78         &     0.68         &     0.82         &     0.81         &     0.55         &     0.76         \\
+Loan FE         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         \\
+Avg(y)          &     4.29         &     4.29         &     4.71         &     5.01         &     4.55         &     4.63         &     5.55         &     6.31         \\
+Avg(y $|$ White)&     4.17         &     4.23         &     4.54         &     4.87         &     4.38         &     4.59         &     5.37         &     6.27         \\
+Avg(y $|$ Black)&     4.40         &     4.35         &     4.87         &     5.16         &     4.73         &     4.68         &     5.73         &     6.35         \\
+White Answer Rate (\%)&   100.00         &    98.77         &   100.00         &    88.07         &   100.00         &   100.00         &   100.00         &   100.00         \\
+Black Answer Rate (\%)&   100.00         &    95.93         &   100.00         &    83.23         &   100.00         &   100.00         &   100.00         &   100.00         \\
+CSE             &   -33.81         &   -21.50         &   -39.12         &   -20.14         &   -31.26         &    -6.78         &   -20.17         &    -8.63         \\
+\bottomrule
+\end{tabular}
+}

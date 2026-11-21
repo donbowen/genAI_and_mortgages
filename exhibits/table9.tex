@@ -1,0 +1,25 @@
+{\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{11}{c}} \toprule
+                &\multicolumn{2}{>{\centering\arraybackslash}p{3.1cm}}{Delinquent}&         &\multicolumn{2}{>{\centering\arraybackslash}p{3.1cm}}{Rate Spread (Actual)}&         &\multicolumn{2}{>{\centering\arraybackslash}p{3.1cm}}{Rate (LLM; Race Undisclosed)}&         &\multicolumn{2}{>{\centering\arraybackslash}p{3.1cm}}{Rate (LLM; Race Disclosed)}\\\cmidrule(lr){2-3}\cmidrule(lr){5-6}\cmidrule(lr){8-9}\cmidrule(lr){11-12}
+                &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         &         &\multicolumn{1}{c}{(5)}         &\multicolumn{1}{c}{(6)}         &         &\multicolumn{1}{c}{(7)}         &\multicolumn{1}{c}{(8)}         \\
+\midrule
+Black (Actual; Undisclosed)&    0.011         &   -0.025         &         &    0.150\sym{*}  &    0.033         &         &    0.303\sym{***}&    0.055         &         &                  &                  \\
+                &  (0.042)         &  (0.043)         &         &  (0.080)         &  (0.069)         &         &  (0.086)         &  (0.050)         &         &                  &                  \\
+Black (Actual; Disclosed)&                  &                  &         &                  &                  &         &                  &                  &         &    0.680\sym{***}&    0.427\sym{***}\\
+                &                  &                  &         &                  &                  &         &                  &                  &         &  (0.110)         &  (0.079)         \\
+CreditScore (Actual, z)&                  &   -0.069\sym{***}&         &                  &   -0.176\sym{***}&         &                  &   -0.457\sym{***}&         &                  &   -0.456\sym{***}\\
+                &                  &  (0.011)         &         &                  &  (0.016)         &         &                  &  (0.016)         &         &                  &  (0.015)         \\
+DTI (Actual, z) &                  &    0.016\sym{*}  &         &                  &   -0.027\sym{*}  &         &                  &    0.133\sym{***}&         &                  &    0.137\sym{***}\\
+                &                  &  (0.009)         &         &                  &  (0.014)         &         &                  &  (0.016)         &         &                  &  (0.016)         \\
+LTV (Actual, z) &                  &    0.015\sym{*}  &         &                  &    0.124\sym{***}&         &                  &    0.110\sym{***}&         &                  &    0.120\sym{***}\\
+                &                  &  (0.008)         &         &                  &  (0.015)         &         &                  &  (0.015)         &         &                  &  (0.014)         \\
+Constant        &    0.096\sym{***}&    0.098\sym{***}&         &    0.351\sym{***}&    0.358\sym{***}&         &    3.920\sym{***}&    3.934\sym{***}&         &    3.855\sym{***}&    3.870\sym{***}\\
+                &  (0.010)         &  (0.009)         &         &  (0.016)         &  (0.014)         &         &  (0.021)         &  (0.013)         &         &  (0.021)         &  (0.013)         \\
+\midrule
+Obs             &    1,000         &    1,000         &         &    1,000         &    1,000         &         &    1,000         &    1,000         &         &    1,000         &    1,000         \\
+R$^2$           &     0.00         &     0.06         &         &     0.00         &     0.20         &         &     0.01         &     0.62         &         &     0.05         &     0.65         \\
+Adj R$^2$       &    -0.00         &     0.06         &         &     0.00         &     0.20         &         &     0.01         &     0.62         &         &     0.05         &     0.65         \\
+Loan FE         &       No         &       No         &         &       No         &       No         &         &       No         &       No         &         &       No         &       No         \\
+\bottomrule
+\end{tabular}
+}

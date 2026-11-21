@@ -1,0 +1,22 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{5}{c}}
+\toprule
+                              &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         &\multicolumn{1}{c}{(5)}         \\
+\midrule
+Rate Spread (Actual, z)       &    0.027\sym{***}&                  &    0.003         &                  &   -0.002         \\
+                              &  (0.011)         &                  &  (0.011)         &                  &  (0.011)         \\
+Rate (LLM, z)                 &                  &    0.059\sym{***}&    0.057\sym{***}&                  &    0.013         \\
+                              &                  &  (0.011)         &  (0.012)         &                  &  (0.012)         \\
+CreditScore (Actual, z)       &                  &                  &                  &   -0.072\sym{***}&   -0.063\sym{***}\\
+                              &                  &                  &                  &  (0.011)         &  (0.013)         \\
+Constant                      &    0.097\sym{***}&    0.097\sym{***}&    0.097\sym{***}&    0.097\sym{***}&    0.097\sym{***}\\
+                              &  (0.009)         &  (0.009)         &  (0.009)         &  (0.009)         &  (0.009)         \\
+\midrule
+Obs                           &    1,000         &    1,000         &    1,000         &    1,000         &    1,000         \\
+R$^2$                         &     0.01         &     0.04         &     0.04         &     0.06         &     0.06         \\
+Adj R$^2$                     &     0.01         &     0.04         &     0.04         &     0.06         &     0.06         \\
+Loan FE                       &       No         &       No         &       No         &       No         &       No         \\
+\bottomrule
+\end{tabular}
+}

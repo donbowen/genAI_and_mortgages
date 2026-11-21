@@ -1,0 +1,19 @@
+{\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{5}{c}} \toprule
+                &\multicolumn{2}{c}{Approval}         &         &\multicolumn{2}{c}{Interest Rate}    \\\cmidrule(lr){2-3}\cmidrule(lr){5-6}
+                &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         \\
+\midrule
+CreditScore (Exp., z)&    0.019\sym{***}&    0.019\sym{***}&         &   -0.668\sym{***}&   -0.660\sym{***}\\
+                &  (0.002)         &  (0.002)         &         &  (0.005)         &  (0.007)         \\
+BlackCity       &   -0.004         &   -0.004         &         &    0.059\sym{***}&    0.059\sym{***}\\
+                &  (0.003)         &  (0.003)         &         &  (0.009)         &  (0.009)         \\
+BlackCity $\times$ CreditScore (Exp., z)&                  &    0.000         &         &                  &   -0.017\sym{*}  \\
+                &                  &  (0.003)         &         &                  &  (0.009)         \\
+\midrule
+Obs             &    6,000         &    6,000         &         &    6,000         &    6,000         \\
+R$^2$           &     0.79         &     0.79         &         &     0.91         &     0.91         \\
+Adj R$^2$       &     0.75         &     0.75         &         &     0.89         &     0.89         \\
+Loan FE         &      Yes         &      Yes         &         &      Yes         &      Yes         \\
+\bottomrule
+\end{tabular}
+}

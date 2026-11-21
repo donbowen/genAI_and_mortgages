@@ -1,0 +1,23 @@
+{ \def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{9}{c}} \toprule
+                &\multicolumn{2}{c}{Approval}         &         &\multicolumn{2}{c}{Interest Rate}    \\\cmidrule(lr){2-3}\cmidrule(lr){5-6}
+                &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         \\
+\midrule
+CreditScore (Exp., z)&    0.029\sym{***}&    0.023\sym{***}&         &   -0.677\sym{***}&   -0.663\sym{***}\\
+                &  (0.002)         &  (0.003)         &         &  (0.004)         &  (0.006)         \\
+Age=50          &   -0.003         &   -0.003         &         &    0.039\sym{***}&    0.039\sym{***}\\
+                &  (0.003)         &  (0.003)         &         &  (0.008)         &  (0.008)         \\
+Age=70          &   -0.016\sym{***}&   -0.016\sym{***}&         &    0.173\sym{***}&    0.173\sym{***}\\
+                &  (0.004)         &  (0.004)         &         &  (0.009)         &  (0.009)         \\
+Age=50 $\times$ CreditScore (Exp., z)&                  &    0.004         &         &                  &   -0.010         \\
+                &                  &  (0.004)         &         &                  &  (0.009)         \\
+Age=70 $\times$ CreditScore (Exp., z)&                  &    0.013\sym{***}&         &                  &   -0.030\sym{***}\\
+                &                  &  (0.004)         &         &                  &  (0.009)         \\
+\midrule
+Obs             &    9,000         &    9,000         &         &    9,000         &    9,000         \\
+R$^2$           &     0.70         &     0.70         &         &     0.90         &     0.90         \\
+Adj R$^2$       &     0.66         &     0.66         &         &     0.89         &     0.89         \\
+Loan FE         &      Yes         &      Yes         &         &      Yes         &      Yes         \\
+\bottomrule
+\end{tabular}
+}

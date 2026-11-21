@@ -1,0 +1,22 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{4}{c}}
+\toprule
+                              &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         \\
+\midrule
+CreditScore (Actual, z)       &   -0.485\sym{***}&                  &                  &   -0.457\sym{***}\\
+                              &  (0.016)         &                  &                  &  (0.016)         \\
+DTI (Actual, z)               &                  &    0.201\sym{***}&                  &    0.134\sym{***}\\
+                              &                  &  (0.020)         &                  &  (0.016)         \\
+LTV (Actual, z)               &                  &                  &    0.170\sym{***}&    0.111\sym{***}\\
+                              &                  &                  &  (0.021)         &  (0.015)         \\
+Constant                      &    3.937\sym{***}&    3.937\sym{***}&    3.937\sym{***}&    3.937\sym{***}\\
+                              &  (0.014)         &  (0.020)         &  (0.020)         &  (0.013)         \\
+\midrule
+Obs                           &    1,000         &    1,000         &    1,000         &    1,000         \\
+R$^2$                         &     0.55         &     0.09         &     0.07         &     0.62         \\
+Adj R$^2$                     &     0.55         &     0.09         &     0.07         &     0.62         \\
+Loan FE                       &       No         &       No         &       No         &       No         \\
+\bottomrule
+\end{tabular}
+}

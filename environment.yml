@@ -1,0 +1,14 @@
+# conda env create -f environment.yml && conda activate genai_mortgages
+# Versions are those the scripts were run with (Windows 11, November 2026).
+# requirements.lock.txt pins every package in that environment.
+name: genai_mortgages
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11.16
+  - pip
+  - pip:
+      - pandas==3.0.6
+      - numpy==2.4.6
+      - tqdm==4.70.1
+      - edsl==1.0.8

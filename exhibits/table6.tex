@@ -1,0 +1,28 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{8}{c}}
+\toprule
+\shortstack[l]{\vphantom{Demographic Signal:}Experiment: \\\vphantom{Demographic Signal:}Mitigation Prompt:     \\\vphantom{Demographic Signal:}Demographic Signal: }&\multicolumn{2}{c}{\shortstack{\vphantom{Demographic Signal:}\expMitigation     \\\vphantom{Demographic Signal:}Mitigation      \\\vphantom{Demographic Signal:}Race }}&\multicolumn{2}{c}{\shortstack{\vphantom{Demographic Signal:}\expAltMitigation  \\\vphantom{Demographic Signal:}Alt.\ Mitigation \\\vphantom{Demographic Signal:}Race }}&\multicolumn{2}{c}{\shortstack{\vphantom{Demographic Signal:}\expMitigationName \\\vphantom{Demographic Signal:}Mitigation      \\\vphantom{Demographic Signal:}Name }}&\multicolumn{2}{c}{\shortstack{\vphantom{Demographic Signal:}\expMitigationCity \\\vphantom{Demographic Signal:}Mitigation      \\\vphantom{Demographic Signal:}City }}\\\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}
+                                             &\multicolumn{1}{c}{\shortstack{Approval   \\ (1)}}&\multicolumn{1}{c}{\shortstack{\vphantom{Approval}Int.\ Rate \\ (2)}}&\multicolumn{1}{c}{\shortstack{Approval   \\ (3)}}&\multicolumn{1}{c}{\shortstack{\vphantom{Approval}Int.\ Rate \\ (4)}}&\multicolumn{1}{c}{\shortstack{Approval   \\ (5)}}&\multicolumn{1}{c}{\shortstack{\vphantom{Approval}Int.\ Rate \\ (6)}}&\multicolumn{1}{c}{\shortstack{Approval   \\ (7)}}&\multicolumn{1}{c}{\shortstack{\vphantom{Approval}Int.\ Rate \\ (8)}}\\
+\midrule
+CreditScore (Exp., z)                        &    0.043\sym{***}&   -0.689\sym{***}&    0.043\sym{***}&   -0.689\sym{***}&    0.053\sym{***}&   -0.758\sym{***}&    0.019\sym{***}&   -0.668\sym{***}\\
+                                             &  (0.003)         &  (0.006)         &  (0.003)         &  (0.006)         &  (0.003)         &  (0.006)         &  (0.002)         &  (0.005)         \\
+BlackSignal                                  &   -0.085\sym{***}&    0.352\sym{***}&   -0.085\sym{***}&    0.352\sym{***}&   -0.013\sym{***}&    0.101\sym{***}&   -0.004         &    0.059\sym{***}\\
+                                             &  (0.005)         &  (0.011)         &  (0.005)         &  (0.011)         &  (0.005)         &  (0.011)         &  (0.003)         &  (0.009)         \\
+Mitigation                                   &    0.002         &   -0.107\sym{***}&   -0.042\sym{***}&    0.179\sym{***}&   -0.004         &   -0.021\sym{*}  &   -0.002         &   -0.126\sym{***}\\
+                                             &  (0.003)         &  (0.008)         &  (0.005)         &  (0.011)         &  (0.005)         &  (0.011)         &  (0.003)         &  (0.009)         \\
+Mitigation $\times$ CreditScore (Exp., z)    &   -0.029\sym{***}&    0.090\sym{***}&    0.009\sym{**} &   -0.064\sym{***}&   -0.003         &    0.001         &    0.001         &    0.076\sym{***}\\
+                                             &  (0.003)         &  (0.007)         &  (0.004)         &  (0.009)         &  (0.004)         &  (0.008)         &  (0.002)         &  (0.007)         \\
+Mitigation $\times$ BlackSignal              &    0.086\sym{***}&   -0.215\sym{***}&    0.061\sym{***}&   -0.104\sym{***}&    0.009         &   -0.040\sym{**} &   -0.001         &   -0.012         \\
+                                             &  (0.006)         &  (0.014)         &  (0.007)         &  (0.017)         &  (0.007)         &  (0.016)         &  (0.004)         &  (0.013)         \\
+\midrule
+Obs                                          &   12,000         &   12,000         &   12,000         &   12,000         &   12,000         &   12,000         &   12,000         &   12,000         \\
+R$^2$                                        &     0.58         &     0.85         &     0.56         &     0.83         &     0.61         &     0.86         &     0.77         &     0.89         \\
+Adj R$^2$                                    &     0.54         &     0.84         &     0.52         &     0.81         &     0.58         &     0.85         &     0.75         &     0.88         \\
+Loan FE                                      &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         \\
+\\ \multicolumn{6}{l}{\textbf{Disparities in mitigation condition:}} \\ $\beta_{\text{B}} + \beta_{\text{B}\times\text{M}} = 0 $&    0.001         &    0.137         &   -0.024         &    0.248         &   -0.004         &    0.061         &   -0.005         &    0.047         \\
+$p$-val: $\beta_{\text{B}} + \beta_{\text{B}\times\text{M}} = 0 $&     0.83         &     0.00         &     0.00         &     0.00         &     0.41         &     0.00         &     0.14         &     0.00         \\
+\% Reduction                                  &     101\%         &      61\%         &      72\%         &      30\%         &      70\%         &      40\%         &     -17\%         &      21\%         \\
+\bottomrule
+\end{tabular}
+}
