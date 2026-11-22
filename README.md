@@ -1,8 +1,12 @@
 # Generative AI and Mortgage Underwriting: Replication Code
 
 Code and data to reproduce every table, figure, and in-text statistic in
-Bowen, Price, Stein, and Yang, "Generative AI and the Evolution of Mortgage
-Underwriting: Measuring and Mitigating Racial Disparities."
+Bowen, Price, Stein, and Yang (2026), "Generative AI and the Evolution of
+Mortgage Underwriting: Measuring and Mitigating Racial Disparities," *The
+Journal of Real Estate Finance and Economics*
+([journal article](https://link.springer.com/article/10.1007/s11146-026-10085-4);
+[paper page](https://bowen.finance/research/ai-mortgage-underwriting/), with the
+PDF and SSRN version).
 
 The study is an audit experiment. Real 2022 HMDA loan applications are sent to
 large language models (LLMs) while the applicant's race (or a proxy for it:
